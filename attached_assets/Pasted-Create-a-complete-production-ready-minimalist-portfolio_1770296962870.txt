@@ -1,0 +1,227 @@
+Create a complete, production-ready, minimalist portfolio website for Nexar Marketing, a digital marketing agency specializing in performance marketing (SEO/SEM, paid social ads) and web development services.
+
+⚠️ PROJECT ARCHITECTURE (VERY IMPORTANT)
+
+Use a monorepo structure with separate frontend and backend folders
+
+Frontend and backend must be completely isolated
+
+Frontend must be pure static output (HTML/CSS/JS or React + Vite)
+
+Backend must NOT interfere with frontend build output
+
+Folder structure:
+/client        → Frontend (React + Vite OR HTML/CSS/JS)
+  ├── src
+  ├── public
+  ├── index.html
+  ├── vite.config.ts (if React)
+  ├── package.json
+  └── dist (generated build output)
+
+/server        → Backend (optional)
+  ├── index.ts / index.js
+  ├── routes
+  ├── controllers
+  └── package.json
+
+
+Frontend build output must be /client/dist
+
+Backend build output must be /server/dist
+
+Frontend deployment must work independently (Vercel-ready)
+
+FRONTEND REQUIREMENTS (PRIMARY FOCUS)
+Tech
+
+React + Vite (preferred) OR clean HTML/CSS/JS
+
+Mobile-first, responsive
+
+Vanilla JS preferred (no heavy libraries)
+
+Tailwind CSS CDN or custom CSS
+
+BRAND & DESIGN SYSTEM
+Logo
+
+Wordmark logo only
+
+Clean sans-serif “Nexar”
+
+Font: Poppins
+
+Bold black with subtle gradient
+#0f172a → #1e293b
+
+Visual Style
+
+Minimalist + Glassmorphism
+
+Background: #ffffff
+
+Text: #0f172a
+
+Accent: #64748b
+
+Primary CTA: #3b82f6
+
+Glass Card Style
+backdrop-filter: blur(20px);
+background: rgba(255,255,255,0.1);
+border: 1px solid rgba(255,255,255,0.2);
+border-radius: 24px;
+box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+
+UNIQUE INTERACTIONS
+
+Floating orb animations (CSS keyframes)
+
+Subtle glow on hover
+
+Asymmetric hero with skewed glass panels
+
+CTA hover: scale 1.05 + glow
+
+Gradient overlays (135deg #3b82f6 → #06b6d4)
+
+Parallax scroll on service icons
+
+Smooth scroll (native CSS / JS)
+
+SITE STRUCTURE (Frontend)
+1️⃣ Home
+
+Full-viewport glass hero
+
+Centered Nexar wordmark
+
+Tagline:
+“Performance Marketing & Web Dev Mastery”
+
+Scroll-down arrow animation
+
+Stats row (glass cards):
+
+99% Client Retention
+
+200+ Projects
+
+5× Average ROI
+
+Primary CTA: “Launch Your Campaign”
+
+2️⃣ About
+
+Team intro glass section
+
+Timeline milestones (glass pills)
+
+Values grid (4):
+
+Innovation
+
+Results
+
+Precision
+
+Scalability
+
+3️⃣ Services
+
+Glass grid with two categories:
+
+Performance Marketing
+
+SEO / SEM
+
+Meta & Google Ads
+
+Analytics & CRO
+
+Web Development
+
+Custom Websites
+
+E-commerce
+
+High-conversion Landing Pages
+
+Each card:
+
+Icon
+
+3 bullet points
+
+“Learn More” micro-interaction
+
+4️⃣ Portfolio
+
+Masonry layout (6–8 case studies)
+
+Glass hover overlays
+
+Reveal metrics:
+
+“300% Traffic Growth”
+
+“4.2× ROAS”
+
+Placeholder mockups allowed
+
+5️⃣ Contact
+
+Glass contact form:
+
+Name
+
+Email
+
+Message
+
+Submit action:
+
+console.log (frontend-only)
+
+OR optional API call to /server
+
+Google Maps embed:
+
+Pune, India
+
+Social icons:
+
+LinkedIn
+
+Instagram
+
+BACKEND (OPTIONAL, ISOLATED)
+
+Node + Express
+
+Only used for:
+
+Contact form API
+
+Email handling
+
+Must NOT affect frontend build
+
+No SSR
+
+No shared build output
+
+SEO & PERFORMANCE
+
+Meta title & description
+
+OpenGraph tags
+
+Schema.org (Marketing Agency)
+
+Image alt tags
+
+Lighthouse score 90+
+
+Load time under 2 seconds
